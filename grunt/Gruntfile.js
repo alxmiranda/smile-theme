@@ -50,6 +50,7 @@ module.exports = function(grunt) {
         files:{
           '<%= dirs.js %>/scripts.js':
           [
+          // Exemplo para ordenar os arquivos
           '<%= dirs.js %>/modulos/js-1.js',
           '<%= dirs.js %>/modulos/js-2.js',
           '<%= dirs.js %>/modulos/js-3.js',
