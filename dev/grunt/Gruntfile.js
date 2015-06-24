@@ -10,11 +10,21 @@ module.exports = function(grunt) {
 
     // configurando diretorios
     dirs: {
-      css: '../assets/css',
-      js: '../assets/js',
-      fonts: '../assets/fonts',
-      images: '../assets/images',
-      sass: '../assets/sass',
+      dev: {
+        css: '../assets/css',
+        js: '../assets/js',
+        fonts: '../assets/fonts',
+        images: '../assets/images',
+        sass: '../assets/sass',
+      },
+
+      dist: {
+        css: '../../assets/css',
+        js: '../../assets/js',
+        fonts: '../../assets/fonts',
+        images: '../../assets/images',
+        sass: '../../assets/sass',
+      },
     },
 
     // compilando .scss em .css
@@ -26,19 +36,19 @@ module.exports = function(grunt) {
           noCache: true
         },
         files: {
-          '<%= dirs.css %>/style.css': '<%= dirs.sass %>/style.scss'
+          '<%= dirs.dev.css %>/style.css': '<%= dirs.dev.sass %>/style.scss'
         }
       }
     },
 
-    // minifica o css
+    // minifica o css que esta compilado de .scss em .css na pasta dev
     cssmin: {
       target: {
         files: [{
           expand: true,
-          cwd: '<%= dirs.css %>/',
+          cwd: '<%= dirs.dev.css %>/',
           src: ['style.css'],
-          dest: '<%= dirs.css %>/',
+          dest: '<%= dirs.dist.css %>/',
           ext: '.min.css'
         }]
       }
@@ -47,14 +57,16 @@ module.exports = function(grunt) {
     // concatenando e minificando arquivos javascript
     uglify:{
       my_targets:{
+        options: {
+          mangle: false
+        },
         files:{
-          '<%= dirs.js %>/scripts.js':
+          '<%= dirs.dist.js %>/scripts.js':
           [
-          // Exemplo para ordenar os arquivos
-          '<%= dirs.js %>/modulos/js-1.js',
-          '<%= dirs.js %>/modulos/js-2.js',
-          '<%= dirs.js %>/modulos/js-3.js',
-          '<%= dirs.js %>/modulos/js-4.js'
+          // componentes para serem minificados
+          '<%= dirs.dev.js %>/componentes/menu/menu.js',
+          '<%= dirs.dev.js %>/componentes/slider/slider.js',
+          '<%= dirs.dev.js %>/componentes/carousel/carousel.js'
           ]
         }
       }
@@ -65,9 +77,9 @@ module.exports = function(grunt) {
       dynamic: {
         files:[{
           expand:true,
-          cwd:'<%= dirs.images %>/originais/',
+          cwd:'<%= dirs.dev.images %>/conteudo/',
           src:['*.{png,jpg,gif}'],
-          dest:'<%= dirs.images %>/producao/'
+          dest:'<%= dirs.dist.images %>/conteudo/'
         }],
       },
     },
@@ -75,11 +87,11 @@ module.exports = function(grunt) {
     // observar atividades e executar tarefas
     watch:{
       sass:{
-        files:['<%= dirs.sass %>/style.scss'],
+        files:['<%= dirs.dev.sass %>/style.scss'],
         tasks:['sass', 'cssmin']
       },
       js:{
-        files:['<%= dirs.js %>/modulos/*'],
+        files:['<%= dirs.dev.js %>/componentes/*/*.js'],
         tasks:['uglify']
       }
     },
@@ -97,7 +109,7 @@ module.exports = function(grunt) {
 
   
   // Registrando as tarefas
-  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
   grunt.registerTask('img', ['newer:imagemin']);
 
 };
