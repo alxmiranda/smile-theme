@@ -5,6 +5,6 @@
 	<title>Smile theme</title>
 </head>
 <body>
-
+	
 </body>
 </html>
