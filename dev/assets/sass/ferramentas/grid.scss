@@ -87,9 +87,3 @@ body {
 .col-10{	@include column(10); }
 .col-11{	@include column(11); }
 .col-12{	@include column(12); }
-
-
-.border{
-	border:1px solid #353535;
-	margin-bottom:10px;
-}
