@@ -1,0 +1,111 @@
+/*  ==========================================================================
+    1. ESTILO BASE
+    ========================================================================== */
+/*  1.1 TIPOGRAFIA
+    ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/*  1.2 PALETA DE CORES
+    ========================================================================== */
+/*left:12 and right:12*/
+body {
+  width: 100%;
+  *zoom: 1; }
+body:before, body:after {
+  content: "";
+  display: table; }
+body:after {
+  clear: both; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Largura maxima do bloco geral do site */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  *zoom: 1; }
+.container:before, .container:after {
+  content: "";
+  display: table; }
+.container:after {
+  clear: both; }
+
+.col-1 {
+  display: inline;
+  float: left;
+  width: 6.29252%;
+  margin: 0 1.02041%; }
+
+.col-2 {
+  display: inline;
+  float: left;
+  width: 14.62585%;
+  margin: 0 1.02041%; }
+
+.col-3 {
+  display: inline;
+  float: left;
+  width: 22.95918%;
+  margin: 0 1.02041%; }
+
+.col-4 {
+  display: inline;
+  float: left;
+  width: 31.29252%;
+  margin: 0 1.02041%; }
+
+.col-5 {
+  display: inline;
+  float: left;
+  width: 39.62585%;
+  margin: 0 1.02041%; }
+
+.col-6 {
+  display: inline;
+  float: left;
+  width: 47.95918%;
+  margin: 0 1.02041%; }
+
+.col-7 {
+  display: inline;
+  float: left;
+  width: 56.29252%;
+  margin: 0 1.02041%; }
+
+.col-8 {
+  display: inline;
+  float: left;
+  width: 64.62585%;
+  margin: 0 1.02041%; }
+
+.col-9 {
+  display: inline;
+  float: left;
+  width: 72.95918%;
+  margin: 0 1.02041%; }
+
+.col-10 {
+  display: inline;
+  float: left;
+  width: 81.29252%;
+  margin: 0 1.02041%; }
+
+.col-11 {
+  display: inline;
+  float: left;
+  width: 89.62585%;
+  margin: 0 1.02041%; }
+
+.col-12 {
+  display: inline;
+  float: left;
+  width: 97.95918%;
+  margin: 0 1.02041%; }
+
+.border {
+  border: 1px solid #353535;
+  margin-bottom: 10px; }
+
+body {
+  background: #f8f8f8; }
