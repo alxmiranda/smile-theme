@@ -66,7 +66,8 @@ module.exports = function(grunt) {
           // componentes para serem minificados
           '<%= dirs.dev.js %>/componentes/menu/menu.js',
           '<%= dirs.dev.js %>/componentes/slider/slider.js',
-          '<%= dirs.dev.js %>/componentes/carousel/carousel.js'
+          '<%= dirs.dev.js %>/componentes/carousel/carousel.js',
+          '<%= dirs.dev.js %>/componentes/forms/form-ajax.js'
           ]
         }
       }
@@ -84,11 +85,19 @@ module.exports = function(grunt) {
       },
     },
 
+
+    autoprefixer: {
+      options: {
+        browsers: ['opera 12','ie'],
+        src: '<%= dirs.dev.sass %>/style.scss',
+        dest: '<%= dirs.dev.css %>/style.css'
+      },
+    },
     // observar atividades e executar tarefas
     watch:{
       sass:{
-        files:['<%= dirs.dev.sass %>/style.scss'],
-        tasks:['sass', 'cssmin']
+        files:['<%= dirs.dev.sass %>/style.scss', '<%= dirs.dev.sass %>/objetos/*.scss'],
+        tasks:['sass', 'cssmin', 'autoprefixer']
       },
       js:{
         files:['<%= dirs.dev.js %>/componentes/*/*.js'],
@@ -105,11 +114,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   
   // Registrando as tarefas
-  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'autoprefixer', 'watch']);
   grunt.registerTask('img', ['newer:imagemin']);
 
 };

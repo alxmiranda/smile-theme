@@ -13,3 +13,14 @@
 /*  FERRAMENTAS
     ========================================================================== */
 @import "ferramentas/grid.scss";
+
+/*  OBJETOS
+    ========================================================================== */
+@import "objetos/objetos.scss";
+
+/*  COMPONENTES
+    ========================================================================== */
+@import "componentes/forms/form.scss";
+body{
+	border-radius: 10px;	
+}
