@@ -4,23 +4,22 @@
 
 /*  CONFIGURAÇÕES
     ========================================================================== */
-@import "configuracoes/config.scss";
-
-/*  ESTILOS GENERICOS
-    ========================================================================== */
-@import "estilos-genericos/normalize.scss";
+@import "configuracoes/_config.scss";
 
 /*  FERRAMENTAS
     ========================================================================== */
-@import "ferramentas/grid.scss";
+@import "ferramentas/_functions.scss";
+@import "ferramentas/_mixins.scss";
+@import "ferramentas/_grid.scss";
+
+/*  ESTILOS GENERICOS
+    ========================================================================== */
+@import "estilos-genericos/_normalize.scss";
 
 /*  OBJETOS
     ========================================================================== */
-@import "objetos/objetos.scss";
+@import "objetos/_objetos.scss";
 
 /*  COMPONENTES
     ========================================================================== */
-@import "componentes/forms/form.scss";
-body{
-	border-radius: 10px;	
-}
+@import "componentes/forms/_form.scss";

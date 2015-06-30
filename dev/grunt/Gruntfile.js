@@ -87,17 +87,15 @@ module.exports = function(grunt) {
 
 
     autoprefixer: {
-      options: {
-        browsers: ['opera 12','ie'],
-        src: '<%= dirs.dev.sass %>/style.scss',
-        dest: '<%= dirs.dev.css %>/style.css'
+      file: {
+        src: '<%= dirs.dev.css %>/style.css'
       },
     },
     // observar atividades e executar tarefas
     watch:{
       sass:{
         files:['<%= dirs.dev.sass %>/style.scss', '<%= dirs.dev.sass %>/objetos/*.scss'],
-        tasks:['sass', 'cssmin', 'autoprefixer']
+        tasks:['sass', 'transition', 'cssmin']
       },
       js:{
         files:['<%= dirs.dev.js %>/componentes/*/*.js'],
@@ -119,7 +117,7 @@ module.exports = function(grunt) {
 
   
   // Registrando as tarefas
-  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'autoprefixer', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'uglify', 'imagemin', 'cssmin', 'watch']);
   grunt.registerTask('img', ['newer:imagemin']);
 
 };
