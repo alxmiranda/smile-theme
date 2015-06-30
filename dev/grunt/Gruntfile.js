@@ -61,7 +61,7 @@ module.exports = function(grunt) {
           mangle: false
         },
         files:{
-          '<%= dirs.dist.js %>/scripts.js':
+          '<%= dirs.dist.js %>/scripts.min.js':
           [
           // componentes para serem minificados
           '<%= dirs.dev.js %>/componentes/menu/menu.js',
