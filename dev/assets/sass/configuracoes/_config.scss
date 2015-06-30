@@ -1,18 +1,31 @@
 /*  ==========================================================================
     1. ESTILO BASE
     ========================================================================== */
+/*
 
-    /*  1.1 TIPOGRAFIA
+ * Ordem de declaração
+    // Posicionamento
+    // Box model
+    // Tipografia
+    // Visual
+ */
+
+    /*  1.1 PALETA DE CORES
+        ========================================================================== */
+        $cor-primaria:#787878;
+        $cor-secundaria:#9AA5AB;
+        $cor-terciaria:#B1BDC5;
+        
+    
+    /*  1.2 TIPOGRAFIA
         ========================================================================== */
 		@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
         $base-font-family: 'Open Sans', sans-serif;
         $base-font-size:14px;
-        $base-font-color:#353535;
+        $base-font-color:$cor-primaria;
         $base-line-height:20px;
 				
 				
-    /*  1.2 PALETA DE CORES
+    /*  1.2.1 COR DE TAG INLINE
         ========================================================================== */
-        $cor-primaria:#f8f8f8;
-        $cor-secundaria:#353535;
-        $cor-terciaria:#757D81;
+        $cor-de-link:$cor-secundaria;
