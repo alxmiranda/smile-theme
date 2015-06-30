@@ -7,11 +7,126 @@
 /*  ==========================================================================
     1. ESTILO BASE
     ========================================================================== */
-/*  1.1 TIPOGRAFIA
+/*
+
+ * Ordem de declara├º├úo
+    // Posicionamento
+    // Box model
+    // Tipografia
+    // Visual
+ */
+/*  1.1 PALETA DE CORES
+    ========================================================================== */
+/*  1.2 TIPOGRAFIA
     ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-/*  1.2 PALETA DE CORES
+/*  1.2.1 COR DE TAG INLINE
     ========================================================================== */
+/*  FERRAMENTAS
+    ========================================================================== */
+/*  ==========================================================================
+    CONVERTER 'PX' EM 'EM'
+    ========================================================================== */
+/*  ==========================================================================
+    CONVERTER 'PX' EM '%'
+    ========================================================================== */
+/*left:12 and right:12*/
+body {
+  width: 100%;
+  *zoom: 1; }
+body:before, body:after {
+  content: "";
+  display: table; }
+body:after {
+  clear: both; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Largura maxima do bloco geral do site */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  *zoom: 1; }
+.container:before, .container:after {
+  content: "";
+  display: table; }
+.container:after {
+  clear: both; }
+
+.col-1 {
+  display: inline;
+  float: left;
+  width: 6.29252%;
+  margin: 0 1.02041%; }
+
+.col-2 {
+  display: inline;
+  float: left;
+  width: 14.62585%;
+  margin: 0 1.02041%; }
+
+.col-3 {
+  display: inline;
+  float: left;
+  width: 22.95918%;
+  margin: 0 1.02041%; }
+
+.col-4 {
+  display: inline;
+  float: left;
+  width: 31.29252%;
+  margin: 0 1.02041%; }
+
+.col-5 {
+  display: inline;
+  float: left;
+  width: 39.62585%;
+  margin: 0 1.02041%; }
+
+.col-6 {
+  display: inline;
+  float: left;
+  width: 47.95918%;
+  margin: 0 1.02041%; }
+
+.col-7 {
+  display: inline;
+  float: left;
+  width: 56.29252%;
+  margin: 0 1.02041%; }
+
+.col-8 {
+  display: inline;
+  float: left;
+  width: 64.62585%;
+  margin: 0 1.02041%; }
+
+.col-9 {
+  display: inline;
+  float: left;
+  width: 72.95918%;
+  margin: 0 1.02041%; }
+
+.col-10 {
+  display: inline;
+  float: left;
+  width: 81.29252%;
+  margin: 0 1.02041%; }
+
+.col-11 {
+  display: inline;
+  float: left;
+  width: 89.62585%;
+  margin: 0 1.02041%; }
+
+.col-12 {
+  display: inline;
+  float: left;
+  width: 97.95918%;
+  margin: 0 1.02041%; }
+
 /*  ESTILOS GENERICOS
     ========================================================================== */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -339,115 +454,46 @@ td, th {
 * {
   box-sizing: border-box; }
 
-/*  FERRAMENTAS
+/*  ESTILOS BASICOS
     ========================================================================== */
-/*left:12 and right:12*/
-body {
-  width: 100%;
-  *zoom: 1; }
-body:before, body:after {
-  content: "";
-  display: table; }
-body:after {
-  clear: both; }
+/*  ==========================================================================
+    LINKS
+    ========================================================================== */
+a {
+  text-decoration: none;
+  color: #787878;
+  font-weight: bold; }
 
-* {
-  margin: 0;
-  padding: 0; }
+/*  ==========================================================================
+    INPUTS
+    ========================================================================== */
+input[type="text"] {
+  background: #787878; }
 
-/* Largura maxima do bloco geral do site */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  *zoom: 1; }
-.container:before, .container:after {
-  content: "";
-  display: table; }
-.container:after {
-  clear: both; }
-
-.col-1 {
-  display: inline;
-  float: left;
-  width: 6.29252%;
-  margin: 0 1.02041%; }
-
-.col-2 {
-  display: inline;
-  float: left;
-  width: 14.62585%;
-  margin: 0 1.02041%; }
-
-.col-3 {
-  display: inline;
-  float: left;
-  width: 22.95918%;
-  margin: 0 1.02041%; }
-
-.col-4 {
-  display: inline;
-  float: left;
-  width: 31.29252%;
-  margin: 0 1.02041%; }
-
-.col-5 {
-  display: inline;
-  float: left;
-  width: 39.62585%;
-  margin: 0 1.02041%; }
-
-.col-6 {
-  display: inline;
-  float: left;
-  width: 47.95918%;
-  margin: 0 1.02041%; }
-
-.col-7 {
-  display: inline;
-  float: left;
-  width: 56.29252%;
-  margin: 0 1.02041%; }
-
-.col-8 {
-  display: inline;
-  float: left;
-  width: 64.62585%;
-  margin: 0 1.02041%; }
-
-.col-9 {
-  display: inline;
-  float: left;
-  width: 72.95918%;
-  margin: 0 1.02041%; }
-
-.col-10 {
-  display: inline;
-  float: left;
-  width: 81.29252%;
-  margin: 0 1.02041%; }
-
-.col-11 {
-  display: inline;
-  float: left;
-  width: 89.62585%;
-  margin: 0 1.02041%; }
-
-.col-12 {
-  display: inline;
-  float: left;
-  width: 97.95918%;
-  margin: 0 1.02041%; }
-
+/*  INPUT TYPE TEXT
+    ========================================================================== */
+/*  INPUT TYPE TEXTAREA
+    ========================================================================== */
+/*  INPUT TYPE SELECT
+    ========================================================================== */
+/*  INPUT TYPE SUBMIT
+    ========================================================================== */
 /*  OBJETOS
     ========================================================================== */
 /*  ==========================================================================
-    inputs
+    BOT├òES
     ========================================================================== */
-input {
-  background: black; }
-
+/*  ==========================================================================
+    TITULOS
+    ========================================================================== */
+/*  ==========================================================================
+    SUBTITULOS
+    ========================================================================== */
+/*  ==========================================================================
+    SETAS
+    ========================================================================== */
+/*  ==========================================================================
+    LINHA DIVIS├ôRIA
+    ========================================================================== */
 /*  COMPONENTES
     ========================================================================== */
-div {
-  -webkit-transition: border-color 4s linear 0.1s;
-          transition: border-color 4s linear 0.1s; }
