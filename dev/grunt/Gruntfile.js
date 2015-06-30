@@ -94,8 +94,16 @@ module.exports = function(grunt) {
     // observar atividades e executar tarefas
     watch:{
       sass:{
-        files:['<%= dirs.dev.sass %>/style.scss', '<%= dirs.dev.sass %>/objetos/*.scss'],
-        tasks:['sass', 'transition', 'cssmin']
+        files:[
+              '<%= dirs.dev.sass %>/configuracoes/*.scss',
+              '<%= dirs.dev.sass %>/ferramentas/*.scss',
+              '<%= dirs.dev.sass %>/estilos-genericos/*.scss',
+              '<%= dirs.dev.sass %>/estilos-basicos/*.scss',
+              '<%= dirs.dev.sass %>/objetos/*.scss',
+              '<%= dirs.dev.sass %>/componentes/*/*.scss',
+              '<%= dirs.dev.sass %>/style.scss'
+              ],
+        tasks:['sass', 'autoprefixer', 'cssmin']
       },
       js:{
         files:['<%= dirs.dev.js %>/componentes/*/*.js'],
