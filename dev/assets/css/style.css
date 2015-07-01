@@ -463,6 +463,7 @@ td, th {
 a {
   text-decoration: none;
   color: #787878;
+  outline-color: red;
   font-weight: bold; }
 a:hover {
   color: #9AA5AB; }
