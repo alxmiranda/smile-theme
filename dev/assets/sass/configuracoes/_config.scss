@@ -1,4 +1,4 @@
-/*  ==========================================================================
+/*  =============================== ===========================================
     1. ESTILO BASE
     ========================================================================== */
 /*
@@ -29,3 +29,22 @@
     /*  1.2.1 COR DE TAG INLINE
         ========================================================================== */
         $cor-de-link:$cor-primaria;
+
+    /*  1.2.2 ICON FONT (FONTES EM SVG)
+        ========================================================================== */
+        @font-face{
+            font-family: "Flaticon";
+            src: url("../fonts/icones/flaticon.eot");
+            src: url("../fonts/icones/flaticon.eot#iefix") format("embedded-opentype"),
+            url("../fonts/icones/flaticon.woff") format("woff"),
+            url("../fonts/icones/flaticon.ttf") format("truetype"),
+            url("../fonts/icones/flaticon.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        // Atribuindo a fonta para classes
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+            font-family: Flaticon;
+        }

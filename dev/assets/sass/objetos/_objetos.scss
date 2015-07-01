@@ -1,4 +1,43 @@
+@charset "UTF-8";
+/*  ==========================================================================
+    BREAKPOINTS (MOBILE FIRST)
+    ========================================================================== */
+    $smpartphone:320px;
+    $tablet:768px;
+    $desktop:1200px;
 
+/*  ==========================================================================
+    LISTA DE ICONES
+    ========================================================================== */
+    .lista-icons{
+        list-style: none;
+        width:100%;
+        li{
+            display: inline;
+        }
+    }
+
+    .flaticon-email:before { content: "\e000"; }
+    .flaticon-facebook:before { content: "\e001"; }
+    .flaticon-google:before { content: "\e002"; }
+    .flaticon-telefone:before { content: "\e003"; }
+    .flaticon-twitter:before {  content: "\e004"; }
+
+    /*  breakpoint tablet
+        ========================================================================== */
+        @media screen and (min-width:$tablet){
+            .lista-icons{
+                display: none;
+            }
+        }
+    /*  breakpoint desktop
+        ========================================================================== */
+        @media screen and (min-width$desktop){
+            .lista-icons{
+                display: block;
+            }
+        }
+    
 /*  ==========================================================================
     BOTÕES
     ========================================================================== */
