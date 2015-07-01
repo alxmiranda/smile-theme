@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../assets/css/style.min.css" />
+	<style>
+.box-texto{
+	margin-bottom: 50px;
+}
+	</style>
 	<title>Estrutura de pastas</title>
 </head>
 <body>
-<h2>Estrutura de pastas</h2>
+<div class="container">
+	<!-- <h2>Estrutura de pastas</h2> -->
+<!-- 	<p>paragrafo</p>
 	<p>smile-theme
 		| Dev
 		 | Assets
@@ -54,8 +61,64 @@
 		 	| css
 		 		style.min.css
 			index.php
-			template-pagina-interna.php</p>
-<h2>Estilos-basicos</h2>
-<a href="#">Links</a>
+			template-pagina-interna.php</p> -->
+	<section id="estilos-basicos">
+		<h2>Estilos básicos</h2>
+		
+		<div class="box-texto">
+			<header><h3>Links</h3></header>
+
+			<article>
+				<a href="#">Exemplo de link</a>
+			</article>
+		</div>
+
+		<div class="box-texto">
+		<header><h3>Headings</h3></header>
+		<article>
+			<h1>H1</h1>
+			<h2>H2</h2>
+			<h3>H3</h3>
+			<h4>H4</h4>
+			<h5>H5</h5>
+			<h6>H6</h6>
+		</article>
+		</div>
+
+		<div class="box-texto">
+			<header>
+				<h3>Inputs</h3>
+			</header>
+			<article>
+				<p>Type Text</p>
+					<input type="text" placeholder="Ex.:Nome completo" />
+				<br>
+				<br>
+				<p>Type Textarea</p>
+					<input type="textarea" placeholder="Ex.: Mensagem" />
+				<br>
+				<br>
+				<p>Type Submit</p>
+					<input type="submit" value="Enviar" />
+				<br>
+			</article>
+		</div>
+
+		<div class="box-texto">
+			<header>
+				<h3>Listas</h3>
+			</header>
+			<article>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+</div>
 </body>
 </html>
