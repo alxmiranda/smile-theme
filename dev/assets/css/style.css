@@ -9,7 +9,7 @@
     ========================================================================== */
 /*
 
- * Ordem de declara├º├úo
+ * Ordem de declaração
     // Posicionamento
     // Box model
     // Tipografia
@@ -520,10 +520,10 @@ input[type="text"]:focus, input[type="textarea"]:focus {
 /*  ==========================================================================
     LISTA DE ICONES
     ========================================================================== */
-.lista-icons {
+.lista-icones {
   list-style: none;
   width: 100%; }
-.lista-icons li {
+.lista-icones li {
   display: inline; }
 
 .flaticon-email:before {
