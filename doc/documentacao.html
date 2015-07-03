@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/styles/default.css">
+	<script src="js/highlight.pack.js"></script>
 	<link rel="stylesheet" href="../assets/css/style.min.css" />
+	
+	<script>hljs.initHighlightingOnLoad();</script> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
 .box-texto{
 	margin-bottom: 50px;
@@ -109,12 +115,7 @@
 				<h3>Listas</h3>
 			</header>
 			<article>
-				<ul>
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-					<li>Item 4</li>
-				</ul>
+
 			</article>
 		</div>
 	</section>
@@ -126,14 +127,22 @@
 				<h3>Lista de icones</h3>
 			</header>
 			<article>
-
 					<strong>para a tag <code>ul</code></strong><code>.lista-icons</code>
 					<strong>para a tag <code>li</code></strong>Ex.: <code>.flaticon-facebook</code>
-		
-				<!-- <p><a href="www.google.com.br" class="flaticon-facebook"></a></p> -->
+					<pre>
+						<code class="html">..
+									<ul>
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+											<li>Item 4</li>
+										</ul>
+						</code>
+					</pre>
 			</article>
 		</div>
 	</section>
 </div>
+
 </body>
 </html>
