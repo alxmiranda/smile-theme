@@ -524,7 +524,8 @@ input[type="text"]:focus, input[type="textarea"]:focus {
   list-style: none;
   width: 100%; }
 .lista-icones li {
-  display: inline; }
+  display: inline-block;
+  padding: 0 0.5em; }
 
 .flaticon-email:before {
   content: "\e000"; }
