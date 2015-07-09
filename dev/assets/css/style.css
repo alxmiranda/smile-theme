@@ -276,7 +276,9 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border: 0;
+  max-width: 100%;
+  /* smile theme */ }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -520,10 +522,10 @@ input[type="text"]:focus, input[type="textarea"]:focus {
 /*  ==========================================================================
     LISTA DE ICONES
     ========================================================================== */
-.lista-icones {
+.st-lista-icones {
   list-style: none;
   width: 100%; }
-.lista-icones li {
+.st-lista-icones li {
   display: inline-block;
   padding: 0 0.5em; }
 
@@ -546,13 +548,29 @@ input[type="text"]:focus, input[type="textarea"]:focus {
     ========================================================================== */
 /*  breakpoint desktop
     ========================================================================== */
-/* LOGOTIPO */
-.logo {
-  max-width: 100%; }
-
 /*  ==========================================================================
     BOTÕES
     ========================================================================== */
+/*  Utilizar em tags: <a>, <button>, <input>
+    ========================================================================== */
+.st-btn {
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+  border: 0.125em solid #ccc;
+  padding: 0.75em 0.875em;
+  border-radius: 0.25em;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 0.875em;
+  line-height: 0.875em;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  font-weight: normal; }
+
+.st-btn-primario {
+  background: #787878; }
+
 /*  ==========================================================================
     TITULOS
     ========================================================================== */

@@ -2,7 +2,7 @@
 /*  ==========================================================================
     LISTA DE ICONES
     ========================================================================== */
-    .lista-icones{
+    .st-lista-icones{
         list-style: none;
         width:100%;
         li{
@@ -27,15 +27,30 @@
      @media screen and (min-width$desktop){
 
     }
+
     
-    /* LOGOTIPO */
-    .logo{
-        max-width: 100%;
-    }
 /*  ==========================================================================
     BOTÕES
     ========================================================================== */
-
+    /*  Utilizar em tags: <a>, <button>, <input>
+        ========================================================================== */
+    .st-btn{
+        transition: all 0.2s;
+        border: em(2) solid #ccc;
+        padding: em(12) em(14);
+        border-radius:em(4);
+        background-color:#fff;
+        display: inline-block;
+        font-size: em(14);
+        line-height:em(14);
+        text-decoration:none;
+        text-align: center;
+        color:#333;
+        font-weight:normal;
+    }
+    .st-btn-primario{
+        background:$cor-primaria;
+    }
 /*  ==========================================================================
     TITULOS
     ========================================================================== */
