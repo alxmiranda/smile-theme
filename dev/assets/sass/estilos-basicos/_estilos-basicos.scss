@@ -5,7 +5,6 @@
 		a{
 			text-decoration: none;
 			color:$cor-de-link;
-			outline-color:red;
 			font-weight: bold;
 
 			&:hover{
@@ -53,8 +52,8 @@
 		&[type="textarea"]:focus{ 
 				outline:none;
 				border:{
-						width: em(1);
-						color: $cor-primaria;
+					width: em(1);
+					color: $cor-primaria;
 				}
 		}
 		}

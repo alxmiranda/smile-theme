@@ -34,11 +34,15 @@
     ========================================================================== */
     /*  Utilizar em tags: <a>, <button>, <input>
         ========================================================================== */
-    .st-btn{
+
+    /*  Botão padrão
+        ========================================================================== */
+    .st-btn,
+    .st-btn:focus{
         transition: all 0.2s;
         border: em(2) solid #ccc;
         padding: em(12) em(14);
-        border-radius:em(0);
+        border-radius:em(6);
         background-color:#fff;
         display: inline-block;
         font-size: em(14);
@@ -46,50 +50,46 @@
         text-decoration:none;
         text-align: center;
         color:#333;
+        outline:none;
         font-weight:normal;
-    
         &:hover{
             background:#ccc;
         }
     }
-
+    /*  Variação de tamanho
+        ========================================================================== */
     .st-btn-grande,
     .st-btn-pequeno{ @extend .st-btn; }
     
-    .st-btn-grande{ padding: em(18) em(68); }
-    .st-btn-pequeno{ padding: em(6) em(7); }
-
-    .st-btn-primario{
+    .st-btn-grande,
+    .st-btn-grande:focus{ padding: em(18) em(68); }
+    
+    .st-btn-pequeno,
+    .st-btn-pequeno:focus{ padding: em(6) em(7); }
+    
+    /*  Variação de estilo
+        ========================================================================== */
+    .st-btn-primario,
+    .st-btn-primario:focus{
         background:$cor-primaria;
         color: #f5f5f5;
-        border:{
-            top:em(2);
-            right:em(2);
-            bottom:em(2);
-            left:em(2);
-            radius:em(4);
-            color: darken($cor-primaria, 17%);
-            style:solid;
-        };
-        color:#f5f5f5;
+        border-color:$cor-primaria;
         &:hover{
             background:darken($cor-primaria, 17%);
             border-color:darken($cor-primaria, 17%);
         }
     }
-
-    .st-btn-secundario{
+    
+    .st-btn-secundario,
+    .st-btn-secundario:focus{
         background:$cor-secundaria;
         color:#f5f5f5;
         border:{
             top:0;
-            right:0;
-            bottom:em(70);
-            left:0;
-            radius:em(4);
-            color: darken($cor-secundaria, 17%);
-            style:solid;
-        };
+            right: 0;
+            left: 0;
+            bottom:em(5) solid darken($cor-secundaria, 17%);
+        }
         &:hover{
             background:darken($cor-secundaria, 17%);
         }
