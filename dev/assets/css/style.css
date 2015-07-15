@@ -497,7 +497,7 @@ p {
 		========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
-  font-color: #000;
+  font-color: #555555;
   margin: 0;
   padding: 0; }
 
@@ -542,6 +542,9 @@ input[type="text"]:focus, input[type="textarea"]:focus {
 
 .flaticon-twitter:before {
   content: "\e004"; }
+
+.flaticon-search:before {
+  content: "\e000"; }
 
 /*  breakpoint tablet
     ========================================================================== */
@@ -600,12 +603,27 @@ input[type="text"]:focus, input[type="textarea"]:focus {
 .st-btn-secundario:hover, .st-btn-secundario:focus:hover {
   background: #6c7a82; }
 
+/*  breakpoint tablet
+    ========================================================================== */
+/*  breakpoint desktop
+    ========================================================================== */
 /*  ==========================================================================
     TITULOS
     ========================================================================== */
+.st-titulo, .st-titulo-pagina, .st-subtitulo {
+  color: #787878;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875em; }
+
+.st-titulo-pagina {
+  font-size: 1.5em; }
+
 /*  ==========================================================================
     SUBTITULOS
     ========================================================================== */
+.st-subtitulo {
+  font-size: 1.375em; }
+
 /*  ==========================================================================
     SETAS
     ========================================================================== */
